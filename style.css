@@ -1,0 +1,286 @@
+:root {
+    --glow: #1ae8c9;
+    --booking-bg-image: url("img/1st-section.jpg");
+    --first-bg-image: url("img/2nd-section.jpg");
+    --second-bg-image: url("img/3rd-section.jpg");
+    --third-bg-image: url("img/4th-section.jpg");
+    --fourth-bg-image: url("img/5th-section.jpg");
+}
+
+.navbar-brand {
+    font-size: 45px;
+}
+
+.navbar-nav > li{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+.navbar .container .navbar-nav .nav-link:hover {
+    color: #dc2f02;
+}
+
+.booking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--booking-bg-image);
+    height: 100vh;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.setting {
+    display: flex;
+}
+
+.settings {
+    position: fixed;
+    background-color: rgb(0,0,0,.5);
+}
+
+.settings img {
+    width: 50px;
+    height: 50px;
+    animation: rotate 1s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.settings img:hover {
+    box-shadow: 0 0 10px #dc2f02;
+}
+
+.booking .setting h2 {
+    margin-left: 515px;
+}
+
+.my-btn {
+    background-color: #dc2f02;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.my-btn:hover {
+    border: 1px solid #dc2f02;
+    color: #dc2f02;
+    background-color: transparent;
+}
+
+.booking .my-btn {
+    width: 200px;
+    margin-left: 580px;
+}
+
+.first {
+    padding-top: 70px;
+    color: #fff;
+    height: 100vh;
+    background-image: var(--first-bg-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.dashed li {
+    list-style: none;
+}
+
+ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+  }
+
+.dashed {
+    padding: 0;
+    margin: 0;
+}
+
+.my-card {
+    color: white;
+    background-color: rgb(0,0,0,.5);
+    padding: 40px;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-out;
+}
+
+.my-card:hover {
+    transform: scale(1.1);
+}
+
+.second {
+    height: 100vh;
+    background-image: var(--second-bg-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.card-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 170px;
+}
+
+
+.my-card-2 {
+    color: white;
+    overflow: hidden;
+    background-color: rgb(0,0,0,.5);
+    margin: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.card-flex .my-card-2 p {
+    color: #dc2f02;
+}
+
+.hello {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    color: #dc2f02;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(-100%);
+}
+
+.no-bg-color {
+    height: 100px;
+}
+
+.my-card-2:hover .hello {
+    opacity: 1;
+    transform: translateY(0);
+    background-color: rgb(0,0,0,.5);
+}
+
+.my-card-2 img {
+	width: 100%;
+	transition: all .5s;
+}
+
+.third {
+    color: #fff;
+    height: 100vh;
+    background-image: var(--third-bg-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.third .big-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.third .big-card .my-card-2 .card-img-top:hover {
+    filter: grayscale(1.0);
+}
+
+.third .animated-year {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.third .animated-year a {
+    text-decoration: none;
+    color: #fff;
+    margin: 15px 15px;
+    border: 2px solid white;
+    padding: 5px;
+    transition: transform 1s;
+}
+
+.third .animated-year a:hover {
+    transform: rotate(20deg);
+    color: #dc2f02;
+    border-color: #dc2f02;
+}
+
+.fourth {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: var(--fourth-bg-image);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    padding-top: 80px;
+}
+
+.fourth form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(0,0,0,.5);
+    height: 65vh;
+    width: 50vw;
+    padding: 15px;
+}
+
+#textInput, #textArea {
+    border-radius: 5px;
+    box-shadow: none
+}
+
+#textInput:focus {
+    color: #fff;
+    background-color: black;
+}
+
+.fourth form .my-btn a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 150px;
+} 
+
+
+footer {
+    background-color: black;
+    padding: 50px;
+}
+
+.icons {
+    padding: 30px 0px 10px;
+}
+
+.icons .button {
+    border-radius: 50%;
+    margin: 3px;
+    background-color: #dc2f02;
+    padding: 15px 10px 5px;
+}
+
+.icons .button i {
+    color: black;
+}
+
+.icons .button:hover {
+    animation: glow 1s infinite alternate;
+}
+
+.icons .button:hover .button__icon {
+    color: var(--glow);
+}
+
+@keyframes glow {
+    from{ 
+        box-shadow: 0 0 10px var(--glow);
+    } to {
+        box-shadow: 0 0 25px var(--glow);
+    }
+}
+
+
